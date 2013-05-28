@@ -24,7 +24,7 @@ abstract class AbstractParty {
 
 	/**
 	 * @var \Doctrine\Common\Collections\Collection<\TYPO3\Flow\Security\Account>
-	 * @ORM\OneToMany(mappedBy="party")
+	 * @ORM\OneToMany(mappedBy="party", cascade={"persist"})
 	 */
 	protected $accounts;
 
